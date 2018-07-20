@@ -68,7 +68,7 @@ public class ProductController {
         Product product = productService.get(id);
         Category category = categoryService.get(product.getCid());
         product.setCategory(category);
-        model.addAttribute("c",category);
+        model.addAttribute("p",product);
         return "admin/editProduct";
     }
 }
